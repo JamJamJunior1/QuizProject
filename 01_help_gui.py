@@ -10,12 +10,12 @@ class Quiz:
         # variable formatting
         background_color = "dark turquoise"    # slate blue maybe?
 
-        # Converter Main Screen GUI
+        # Quiz Main Screen GUI
         self.quiz_frame = Frame(width=640, height=480, bg=background_color,
                                      pady=10)
         self.quiz_frame.grid()
 
-        #Temperature Conversion Heading (row 0)
+        # Quiz Heading (row 0)
         self.quiz_label = Label(self.quiz_frame, text="Cool Quiz Boogaloo",
                                           font=("Arial", "14", "bold"),
                                           bg=background_color,
@@ -70,7 +70,7 @@ class Help:
         partner.help_button.config(state=NORMAL)
         self.help_box.destroy()
 
-# main routine - this needs main fixing
+# main routine
 if __name__ == "__main__":
     root = Tk()
     root.title("Quiz")
