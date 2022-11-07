@@ -26,7 +26,7 @@ class Quiz:
                                   font="Arial 10 bold", wrap=250, justify=LEFT, bg=background_color, padx=10, pady=10,)
         self.user_instructions.grid(row=1)
 
-        # Answer label (row 2)
+        # Question label (row 2)
         self.converted_label = Label(self.quiz_frame, font="Arial 14 bold", fg="purple", bg=background_color, pady=10, text="Question")
         self.converted_label.grid(row=2)
 
