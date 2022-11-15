@@ -9,6 +9,9 @@ class Quiz:
         # variable formatting
         background_color = "dark turquoise"    # slate blue maybe?
 
+        # Initialise list to hold answer history
+        self.all_answers = []
+
         # Quiz Main Screen GUI
         self.quiz_frame = Frame(width=300, height=480, bg=background_color,
                                      pady=10)  # experiment with these
@@ -43,6 +46,14 @@ class Quiz:
 
         self.help_button = Button(self.hist_help_frame, font="Arial 12 bold", fg="purple", bg=background_color, pady=10, text="Help", width=5)
         self.help_button.grid(row=0, column=1)
+
+    def questions(self, question):
+        print(question)
+
+        error = "red"
+
+
+
 
 if __name__ == "__main__":
     root = Tk()
