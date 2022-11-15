@@ -53,7 +53,6 @@ class Quiz:
         error = "red"
 
 
-
 if __name__ == "__main__":
     root = Tk()
     root.title("Quiz")
